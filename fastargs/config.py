@@ -194,7 +194,7 @@ or from CLI arguments. For CLI just use:
             if value is not None:
                 recursive_set(result, path, value)
 
-        return NestedNamespace(fix_dict(result))
+        return fix_dict(result)
 
     def validate(self, mode='stderr'):
         errors = {}
